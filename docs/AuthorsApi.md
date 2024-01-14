@@ -1,4 +1,4 @@
-# mearman_openalex_api.AuthorsApi
+# openalex_api.AuthorsApi
 
 All URIs are relative to *https://api.openalex.org*
 
@@ -23,22 +23,22 @@ Get a single author by id
 ```python
 import time
 import os
-import mearman_openalex_api
-from mearman_openalex_api.models.author import Author
-from mearman_openalex_api.rest import ApiException
+import openalex_api
+from openalex_api.models.author import Author
+from openalex_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.openalex.org
 # See configuration.py for a list of all supported configuration parameters.
-configuration = mearman_openalex_api.Configuration(
+configuration = openalex_api.Configuration(
     host = "https://api.openalex.org"
 )
 
 
 # Enter a context with an instance of the API client
-with mearman_openalex_api.ApiClient(configuration) as api_client:
+with openalex_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mearman_openalex_api.AuthorsApi(api_client)
+    api_instance = openalex_api.AuthorsApi(api_client)
     id = 'id_example' # str | 
     select = 'select_example' # str |  (optional)
     user_agent = None # object | [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) (optional)
@@ -101,22 +101,22 @@ Get lists of authors
 ```python
 import time
 import os
-import mearman_openalex_api
-from mearman_openalex_api.models.authors_response_schema import AuthorsResponseSchema
-from mearman_openalex_api.rest import ApiException
+import openalex_api
+from openalex_api.models.authors_response_schema import AuthorsResponseSchema
+from openalex_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.openalex.org
 # See configuration.py for a list of all supported configuration parameters.
-configuration = mearman_openalex_api.Configuration(
+configuration = openalex_api.Configuration(
     host = "https://api.openalex.org"
 )
 
 
 # Enter a context with an instance of the API client
-with mearman_openalex_api.ApiClient(configuration) as api_client:
+with openalex_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mearman_openalex_api.AuthorsApi(api_client)
+    api_instance = openalex_api.AuthorsApi(api_client)
     filter = 'filter_example' # str |  (optional)
     group_by = 'group_by_example' # str |  (optional)
     group_by2 = 'group_by_example' # str |  (optional)
@@ -193,22 +193,22 @@ No authorization required
 ```python
 import time
 import os
-import mearman_openalex_api
-from mearman_openalex_api.models.auto_complete_result_schema import AutoCompleteResultSchema
-from mearman_openalex_api.rest import ApiException
+import openalex_api
+from openalex_api.models.auto_complete_result_schema import AutoCompleteResultSchema
+from openalex_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.openalex.org
 # See configuration.py for a list of all supported configuration parameters.
-configuration = mearman_openalex_api.Configuration(
+configuration = openalex_api.Configuration(
     host = "https://api.openalex.org"
 )
 
 
 # Enter a context with an instance of the API client
-with mearman_openalex_api.ApiClient(configuration) as api_client:
+with openalex_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mearman_openalex_api.AuthorsApi(api_client)
+    api_instance = openalex_api.AuthorsApi(api_client)
     q = 'q_example' # str |  (optional)
     user_agent = None # object | [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) (optional)
     mailto = None # object | The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool). (optional)
@@ -269,22 +269,22 @@ Get a single author by id
 ```python
 import time
 import os
-import mearman_openalex_api
-from mearman_openalex_api.models.author import Author
-from mearman_openalex_api.rest import ApiException
+import openalex_api
+from openalex_api.models.author import Author
+from openalex_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.openalex.org
 # See configuration.py for a list of all supported configuration parameters.
-configuration = mearman_openalex_api.Configuration(
+configuration = openalex_api.Configuration(
     host = "https://api.openalex.org"
 )
 
 
 # Enter a context with an instance of the API client
-with mearman_openalex_api.ApiClient(configuration) as api_client:
+with openalex_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mearman_openalex_api.AuthorsApi(api_client)
+    api_instance = openalex_api.AuthorsApi(api_client)
     select = 'select_example' # str |  (optional)
     user_agent = None # object | [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) (optional)
     mailto = None # object | The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool). (optional)

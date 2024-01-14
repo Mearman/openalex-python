@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.auto_complete_result_schema import AutoCompleteResultSchema
+from openalex_api.models.auto_complete_result_schema import AutoCompleteResultSchema
 
 # TODO update the JSON string below
 json = "{}"

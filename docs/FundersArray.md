@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.funders_array import FundersArray
+from openalex_api.models.funders_array import FundersArray
 
 # TODO update the JSON string below
 json = "{}"

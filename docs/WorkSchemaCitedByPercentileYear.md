@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.work_schema_cited_by_percentile_year import WorkSchemaCitedByPercentileYear
+from openalex_api.models.work_schema_cited_by_percentile_year import WorkSchemaCitedByPercentileYear
 
 # TODO update the JSON string below
 json = "{}"

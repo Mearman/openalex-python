@@ -1,4 +1,4 @@
-# mearman_openalex_api.PeopleApi
+# openalex_api.PeopleApi
 
 All URIs are relative to *https://api.openalex.org*
 
@@ -20,22 +20,22 @@ Method | HTTP request | Description
 ```python
 import time
 import os
-import mearman_openalex_api
-from mearman_openalex_api.models.person_response_schema import PersonResponseSchema
-from mearman_openalex_api.rest import ApiException
+import openalex_api
+from openalex_api.models.person_response_schema import PersonResponseSchema
+from openalex_api.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.openalex.org
 # See configuration.py for a list of all supported configuration parameters.
-configuration = mearman_openalex_api.Configuration(
+configuration = openalex_api.Configuration(
     host = "https://api.openalex.org"
 )
 
 
 # Enter a context with an instance of the API client
-with mearman_openalex_api.ApiClient(configuration) as api_client:
+with openalex_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = mearman_openalex_api.PeopleApi(api_client)
+    api_instance = openalex_api.PeopleApi(api_client)
     id = 'id_example' # str | 
     select = 'select_example' # str |  (optional)
     user_agent = None # object | [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) (optional)

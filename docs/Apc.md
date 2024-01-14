@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.apc import Apc
+from openalex_api.models.apc import Apc
 
 # TODO update the JSON string below
 json = "{}"

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.role import Role
+from openalex_api.models.role import Role
 
 # TODO update the JSON string below
 json = "{}"

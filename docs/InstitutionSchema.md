@@ -34,7 +34,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.institution_schema import InstitutionSchema
+from openalex_api.models.institution_schema import InstitutionSchema
 
 # TODO update the JSON string below
 json = "{}"

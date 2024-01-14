@@ -28,7 +28,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.publisher_schema import PublisherSchema
+from openalex_api.models.publisher_schema import PublisherSchema
 
 # TODO update the JSON string below
 json = "{}"

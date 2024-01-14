@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.person_response_schema import PersonResponseSchema
+from openalex_api.models.person_response_schema import PersonResponseSchema
 
 # TODO update the JSON string below
 json = "{}"

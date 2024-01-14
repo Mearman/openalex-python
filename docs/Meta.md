@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.meta import Meta
+from openalex_api.models.meta import Meta
 
 # TODO update the JSON string below
 json = "{}"

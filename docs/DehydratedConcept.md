@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.dehydrated_concept import DehydratedConcept
+from openalex_api.models.dehydrated_concept import DehydratedConcept
 
 # TODO update the JSON string below
 json = "{}"

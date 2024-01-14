@@ -51,7 +51,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.work_schema import WorkSchema
+from openalex_api.models.work_schema import WorkSchema
 
 # TODO update the JSON string below
 json = "{}"

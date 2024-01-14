@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.funder_schema import FunderSchema
+from openalex_api.models.funder_schema import FunderSchema
 
 # TODO update the JSON string below
 json = "{}"

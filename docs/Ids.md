@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.ids import Ids
+from openalex_api.models.ids import Ids
 
 # TODO update the JSON string below
 json = "{}"

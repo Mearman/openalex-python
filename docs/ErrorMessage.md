@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.error_message import ErrorMessage
+from openalex_api.models.error_message import ErrorMessage
 
 # TODO update the JSON string below
 json = "{}"

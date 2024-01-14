@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.affiliations_inner import AffiliationsInner
+from openalex_api.models.affiliations_inner import AffiliationsInner
 
 # TODO update the JSON string below
 json = "{}"

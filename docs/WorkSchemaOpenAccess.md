@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.work_schema_open_access import WorkSchemaOpenAccess
+from openalex_api.models.work_schema_open_access import WorkSchemaOpenAccess
 
 # TODO update the JSON string below
 json = "{}"

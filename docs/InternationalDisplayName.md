@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from mearman_openalex_api.models.international_display_name import InternationalDisplayName
+from openalex_api.models.international_display_name import InternationalDisplayName
 
 # TODO update the JSON string below
 json = "{}"
