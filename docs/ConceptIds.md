@@ -1,0 +1,33 @@
+# ConceptIds
+
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**mag** | **object** |  | [optional] 
+**openalex** | **object** |  | 
+**umls_cui** | **object** |  | [optional] 
+**wikidata** | **object** |  | [optional] 
+**wikipedia** | **object** |  | [optional] 
+
+## Example
+
+```python
+from mearman_openalex_api.models.concept_ids import ConceptIds
+
+# TODO update the JSON string below
+json = "{}"
+# create an instance of ConceptIds from a JSON string
+concept_ids_instance = ConceptIds.from_json(json)
+# print the JSON string representation of the object
+print ConceptIds.to_json()
+
+# convert the object into a dict
+concept_ids_dict = concept_ids_instance.to_dict()
+# create an instance of ConceptIds from a dict
+concept_ids_form_dict = concept_ids.from_dict(concept_ids_dict)
+```
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
