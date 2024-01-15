@@ -56,6 +56,7 @@ class ListApi:
         api_key: Optional[StrictStr] = None,
         per_page: Optional[StrictInt] = None,
         cursor: Optional[StrictStr] = None,
+        search: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
         mailto: Annotated[Optional[Any], Field(description="The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).")] = None,
         _request_timeout: Union[
@@ -83,6 +84,8 @@ class ListApi:
         :type per_page: int
         :param cursor:
         :type cursor: str
+        :param search:
+        :type search: str
         :param user_agent: [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)
         :type user_agent: object
         :param mailto: The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).
@@ -114,6 +117,7 @@ class ListApi:
             api_key=api_key,
             per_page=per_page,
             cursor=cursor,
+            search=search,
             user_agent=user_agent,
             mailto=mailto,
             _request_auth=_request_auth,
@@ -144,6 +148,7 @@ class ListApi:
         api_key: Optional[StrictStr] = None,
         per_page: Optional[StrictInt] = None,
         cursor: Optional[StrictStr] = None,
+        search: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
         mailto: Annotated[Optional[Any], Field(description="The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).")] = None,
         _request_timeout: Union[
@@ -171,6 +176,8 @@ class ListApi:
         :type per_page: int
         :param cursor:
         :type cursor: str
+        :param search:
+        :type search: str
         :param user_agent: [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)
         :type user_agent: object
         :param mailto: The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).
@@ -202,6 +209,7 @@ class ListApi:
             api_key=api_key,
             per_page=per_page,
             cursor=cursor,
+            search=search,
             user_agent=user_agent,
             mailto=mailto,
             _request_auth=_request_auth,
@@ -232,6 +240,7 @@ class ListApi:
         api_key: Optional[StrictStr] = None,
         per_page: Optional[StrictInt] = None,
         cursor: Optional[StrictStr] = None,
+        search: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
         mailto: Annotated[Optional[Any], Field(description="The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).")] = None,
         _request_timeout: Union[
@@ -259,6 +268,8 @@ class ListApi:
         :type per_page: int
         :param cursor:
         :type cursor: str
+        :param search:
+        :type search: str
         :param user_agent: [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)
         :type user_agent: object
         :param mailto: The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).
@@ -290,6 +301,7 @@ class ListApi:
             api_key=api_key,
             per_page=per_page,
             cursor=cursor,
+            search=search,
             user_agent=user_agent,
             mailto=mailto,
             _request_auth=_request_auth,
@@ -315,6 +327,7 @@ class ListApi:
         api_key,
         per_page,
         cursor,
+        search,
         user_agent,
         mailto,
         _request_auth,
@@ -352,6 +365,10 @@ class ListApi:
         if cursor is not None:
             
             _query_params.append(('cursor', cursor))
+            
+        if search is not None:
+            
+            _query_params.append(('search', search))
             
         if mailto is not None:
             

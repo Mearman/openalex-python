@@ -245,7 +245,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_works**
-> WorksResponseSchema get_works(filter=filter, api_key=api_key, per_page=per_page, cursor=cursor, user_agent=user_agent, mailto=mailto)
+> WorksResponseSchema get_works(filter=filter, api_key=api_key, per_page=per_page, cursor=cursor, search=search, user_agent=user_agent, mailto=mailto)
 
 /works
 
@@ -277,12 +277,13 @@ with openalex_api.ApiClient(configuration) as api_client:
     api_key = 'api_key_example' # str |  (optional)
     per_page = 3 # int |  (optional)
     cursor = 'cursor_example' # str |  (optional)
+    search = 'search_example' # str |  (optional)
     user_agent = None # object | [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) (optional)
     mailto = None # object | The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool). (optional)
 
     try:
         # /works
-        api_response = api_instance.get_works(filter=filter, api_key=api_key, per_page=per_page, cursor=cursor, user_agent=user_agent, mailto=mailto)
+        api_response = api_instance.get_works(filter=filter, api_key=api_key, per_page=per_page, cursor=cursor, search=search, user_agent=user_agent, mailto=mailto)
         print("The response of WorksApi->get_works:\n")
         pprint(api_response)
     except Exception as e:
@@ -300,6 +301,7 @@ Name | Type | Description  | Notes
  **api_key** | **str**|  | [optional] 
  **per_page** | **int**|  | [optional] 
  **cursor** | **str**|  | [optional] 
+ **search** | **str**|  | [optional] 
  **user_agent** | [**object**](.md)| [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) | [optional] 
  **mailto** | [**object**](.md)| The API is the primary way to get OpenAlex data. It&#39;s free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like &#x60;mailto:example@domain.com&#x60;, or in the User-Agent request header, like &#x60;User-Agent: my-app (mailto:example@domain.com)&#x60;. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool). | [optional] 
 
