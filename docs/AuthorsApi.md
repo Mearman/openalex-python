@@ -120,8 +120,8 @@ with openalex_api.ApiClient(configuration) as api_client:
     filter = 'filter_example' # str |  (optional)
     group_by = 'group_by_example' # str |  (optional)
     group_by2 = 'group_by_example' # str |  (optional)
-    per_page = 1 # int |  (optional)
-    page = 'page_example' # str |  (optional)
+    per_page = 3 # int |  (optional)
+    page = 1 # int |  (optional)
     sample = 'sample_example' # str |  (optional)
     search = 'search_example' # str |  (optional)
     select = 'select_example' # str |  (optional)
@@ -149,7 +149,7 @@ Name | Type | Description  | Notes
  **group_by** | **str**|  | [optional] 
  **group_by2** | **str**|  | [optional] 
  **per_page** | **int**|  | [optional] 
- **page** | **str**|  | [optional] 
+ **page** | **int**|  | [optional] 
  **sample** | **str**|  | [optional] 
  **search** | **str**|  | [optional] 
  **select** | **str**|  | [optional] 

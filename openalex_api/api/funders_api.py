@@ -661,7 +661,7 @@ class FundersApi:
         group_by: Optional[StrictStr] = None,
         group_by2: Optional[StrictStr] = None,
         per_page: Optional[StrictInt] = None,
-        page: Optional[StrictStr] = None,
+        page: Optional[StrictInt] = None,
         sample: Optional[StrictStr] = None,
         search: Optional[StrictStr] = None,
         select: Optional[StrictStr] = None,
@@ -694,7 +694,7 @@ class FundersApi:
         :param per_page:
         :type per_page: int
         :param page:
-        :type page: str
+        :type page: int
         :param sample:
         :type sample: str
         :param search:
@@ -769,7 +769,7 @@ class FundersApi:
         group_by: Optional[StrictStr] = None,
         group_by2: Optional[StrictStr] = None,
         per_page: Optional[StrictInt] = None,
-        page: Optional[StrictStr] = None,
+        page: Optional[StrictInt] = None,
         sample: Optional[StrictStr] = None,
         search: Optional[StrictStr] = None,
         select: Optional[StrictStr] = None,
@@ -802,7 +802,7 @@ class FundersApi:
         :param per_page:
         :type per_page: int
         :param page:
-        :type page: str
+        :type page: int
         :param sample:
         :type sample: str
         :param search:
@@ -877,7 +877,7 @@ class FundersApi:
         group_by: Optional[StrictStr] = None,
         group_by2: Optional[StrictStr] = None,
         per_page: Optional[StrictInt] = None,
-        page: Optional[StrictStr] = None,
+        page: Optional[StrictInt] = None,
         sample: Optional[StrictStr] = None,
         search: Optional[StrictStr] = None,
         select: Optional[StrictStr] = None,
@@ -910,7 +910,7 @@ class FundersApi:
         :param per_page:
         :type per_page: int
         :param page:
-        :type page: str
+        :type page: int
         :param sample:
         :type sample: str
         :param search:
