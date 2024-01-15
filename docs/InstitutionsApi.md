@@ -164,7 +164,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_institutions**
-> InstitutionsResponseSchema get_institutions(filter=filter, group_by=group_by, group_by2=group_by2, per_page=per_page, page=page, sample=sample, search=search, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
+> InstitutionsResponseSchema get_institutions(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
 
 /institutions
 
@@ -192,11 +192,12 @@ configuration = openalex_api.Configuration(
 with openalex_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openalex_api.InstitutionsApi(api_client)
+    api_key = 'api_key_example' # str |  (optional)
+    cursor = 'cursor_example' # str |  (optional)
     filter = 'filter_example' # str |  (optional)
     group_by = 'group_by_example' # str |  (optional)
-    group_by2 = 'group_by_example' # str |  (optional)
-    per_page = 3 # int |  (optional)
     page = 1 # int |  (optional)
+    per_page = 3 # int |  (optional)
     sample = 'sample_example' # str |  (optional)
     search = 'search_example' # str |  (optional)
     select = 'select_example' # str |  (optional)
@@ -206,7 +207,7 @@ with openalex_api.ApiClient(configuration) as api_client:
 
     try:
         # /institutions
-        api_response = api_instance.get_institutions(filter=filter, group_by=group_by, group_by2=group_by2, per_page=per_page, page=page, sample=sample, search=search, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
+        api_response = api_instance.get_institutions(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
         print("The response of InstitutionsApi->get_institutions:\n")
         pprint(api_response)
     except Exception as e:
@@ -220,11 +221,12 @@ with openalex_api.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
+ **api_key** | **str**|  | [optional] 
+ **cursor** | **str**|  | [optional] 
  **filter** | **str**|  | [optional] 
  **group_by** | **str**|  | [optional] 
- **group_by2** | **str**|  | [optional] 
- **per_page** | **int**|  | [optional] 
  **page** | **int**|  | [optional] 
+ **per_page** | **int**|  | [optional] 
  **sample** | **str**|  | [optional] 
  **search** | **str**|  | [optional] 
  **select** | **str**|  | [optional] 
