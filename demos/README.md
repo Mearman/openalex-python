@@ -1,0 +1,1 @@
+[![Open in](https://img.shields.io/badge/Open%20in-Colab-F9AB00?style=for-the-badge&logo=Google%20Colab&link=https://colab.research.google.com/github/Mearman/openalex-python/blob/main/demos/OpenAlex.ipynb)](https://colab.research.google.com/github/Mearman/openalex-python/blob/main/demos/OpenAlex.ipynb)
