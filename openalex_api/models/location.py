@@ -30,14 +30,14 @@ class Location(BaseModel):
     """
     Location
     """ # noqa: E501
-    is_accepted: Optional[Any]
-    is_oa: Optional[Any]
-    is_published: Optional[Any]
-    landing_page_url: Optional[Any]
+    is_accepted: Optional[Any] = None
+    is_oa: Optional[Any] = None
+    is_published: Optional[Any] = None
+    landing_page_url: Optional[Any] = None
     license: Optional[Any] = None
     pdf_url: Optional[Any] = None
-    source: LocationSource
-    version: Optional[Any]
+    source: Optional[LocationSource] = None
+    version: Optional[Any] = None
     __properties: ClassVar[List[str]] = ["is_accepted", "is_oa", "is_published", "landing_page_url", "license", "pdf_url", "source", "version"]
 
     model_config = {

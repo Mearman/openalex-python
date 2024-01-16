@@ -5,14 +5,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**is_accepted** | **object** |  | 
-**is_oa** | **object** |  | 
-**is_published** | **object** |  | 
-**landing_page_url** | **object** |  | 
+**is_accepted** | **object** |  | [optional] 
+**is_oa** | **object** |  | [optional] 
+**is_published** | **object** |  | [optional] 
+**landing_page_url** | **object** |  | [optional] 
 **license** | **object** |  | [optional] 
 **pdf_url** | **object** |  | [optional] 
-**source** | [**LocationSource**](LocationSource.md) |  | 
-**version** | **object** |  | 
+**source** | [**LocationSource**](LocationSource.md) |  | [optional] 
+**version** | **object** |  | [optional] 
 
 ## Example
 
