@@ -58,7 +58,7 @@ class ListApi:
         group_by: Optional[StrictStr] = None,
         page: Optional[StrictInt] = None,
         per_page: Optional[StrictInt] = None,
-        sample: Optional[StrictStr] = None,
+        sample: Optional[StrictInt] = None,
         search: Optional[StrictStr] = None,
         select: Optional[StrictStr] = None,
         sort: Optional[StrictStr] = None,
@@ -94,7 +94,7 @@ class ListApi:
         :param per_page:
         :type per_page: int
         :param sample:
-        :type sample: str
+        :type sample: int
         :param search:
         :type search: str
         :param select:
@@ -170,7 +170,7 @@ class ListApi:
         group_by: Optional[StrictStr] = None,
         page: Optional[StrictInt] = None,
         per_page: Optional[StrictInt] = None,
-        sample: Optional[StrictStr] = None,
+        sample: Optional[StrictInt] = None,
         search: Optional[StrictStr] = None,
         select: Optional[StrictStr] = None,
         sort: Optional[StrictStr] = None,
@@ -206,7 +206,7 @@ class ListApi:
         :param per_page:
         :type per_page: int
         :param sample:
-        :type sample: str
+        :type sample: int
         :param search:
         :type search: str
         :param select:
@@ -282,7 +282,7 @@ class ListApi:
         group_by: Optional[StrictStr] = None,
         page: Optional[StrictInt] = None,
         per_page: Optional[StrictInt] = None,
-        sample: Optional[StrictStr] = None,
+        sample: Optional[StrictInt] = None,
         search: Optional[StrictStr] = None,
         select: Optional[StrictStr] = None,
         sort: Optional[StrictStr] = None,
@@ -318,7 +318,7 @@ class ListApi:
         :param per_page:
         :type per_page: int
         :param sample:
-        :type sample: str
+        :type sample: int
         :param search:
         :type search: str
         :param select:

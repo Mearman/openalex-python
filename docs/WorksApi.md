@@ -279,7 +279,7 @@ with openalex_api.ApiClient(configuration) as api_client:
     group_by = 'group_by_example' # str |  (optional)
     page = 1 # int |  (optional)
     per_page = 3 # int |  (optional)
-    sample = 'sample_example' # str |  (optional)
+    sample = 56 # int |  (optional)
     search = 'search_example' # str |  (optional)
     select = 'select_example' # str |  (optional)
     sort = 'sort_example' # str |  (optional)
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
  **group_by** | **str**|  | [optional] 
  **page** | **int**|  | [optional] 
  **per_page** | **int**|  | [optional] 
- **sample** | **str**|  | [optional] 
+ **sample** | **int**|  | [optional] 
  **search** | **str**|  | [optional] 
  **select** | **str**|  | [optional] 
  **sort** | **str**|  | [optional] 
