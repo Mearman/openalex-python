@@ -14,7 +14,7 @@
 """  # noqa: E501
 
 
-__version__ = "0.0.6"
+__version__ = "0.0.8"
 
 # import apis into sdk package
 from openalex_api.api.authors_api import AuthorsApi
