@@ -371,6 +371,7 @@ class AuthorsApi:
         per_page: Optional[StrictInt] = None,
         sample: Optional[StrictInt] = None,
         search: Optional[StrictStr] = None,
+        seed: Optional[Any] = None,
         select: Optional[StrictStr] = None,
         sort: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
@@ -408,6 +409,8 @@ class AuthorsApi:
         :type sample: int
         :param search:
         :type search: str
+        :param seed:
+        :type seed: object
         :param select:
         :type select: str
         :param sort:
@@ -447,6 +450,7 @@ class AuthorsApi:
             per_page=per_page,
             sample=sample,
             search=search,
+            seed=seed,
             select=select,
             sort=sort,
             user_agent=user_agent,
@@ -483,6 +487,7 @@ class AuthorsApi:
         per_page: Optional[StrictInt] = None,
         sample: Optional[StrictInt] = None,
         search: Optional[StrictStr] = None,
+        seed: Optional[Any] = None,
         select: Optional[StrictStr] = None,
         sort: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
@@ -520,6 +525,8 @@ class AuthorsApi:
         :type sample: int
         :param search:
         :type search: str
+        :param seed:
+        :type seed: object
         :param select:
         :type select: str
         :param sort:
@@ -559,6 +566,7 @@ class AuthorsApi:
             per_page=per_page,
             sample=sample,
             search=search,
+            seed=seed,
             select=select,
             sort=sort,
             user_agent=user_agent,
@@ -595,6 +603,7 @@ class AuthorsApi:
         per_page: Optional[StrictInt] = None,
         sample: Optional[StrictInt] = None,
         search: Optional[StrictStr] = None,
+        seed: Optional[Any] = None,
         select: Optional[StrictStr] = None,
         sort: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
@@ -632,6 +641,8 @@ class AuthorsApi:
         :type sample: int
         :param search:
         :type search: str
+        :param seed:
+        :type seed: object
         :param select:
         :type select: str
         :param sort:
@@ -671,6 +682,7 @@ class AuthorsApi:
             per_page=per_page,
             sample=sample,
             search=search,
+            seed=seed,
             select=select,
             sort=sort,
             user_agent=user_agent,
@@ -702,6 +714,7 @@ class AuthorsApi:
         per_page,
         sample,
         search,
+        seed,
         select,
         sort,
         user_agent,
@@ -757,6 +770,10 @@ class AuthorsApi:
         if search is not None:
             
             _query_params.append(('search', search))
+            
+        if seed is not None:
+            
+            _query_params.append(('seed', seed))
             
         if select is not None:
             

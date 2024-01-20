@@ -114,7 +114,7 @@ configuration = openalex_api.Configuration(
 with openalex_api.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = openalex_api.InstitutionsApi(api_client)
-    id = 'id_example' # str | 
+    id = None # object | 
     select = 'select_example' # str |  (optional)
     user_agent = None # object | [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) (optional)
     mailto = None # object | The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool). (optional)
@@ -135,7 +135,7 @@ with openalex_api.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **str**|  | 
+ **id** | [**object**](.md)|  | 
  **select** | **str**|  | [optional] 
  **user_agent** | [**object**](.md)| [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) | [optional] 
  **mailto** | [**object**](.md)| The API is the primary way to get OpenAlex data. It&#39;s free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like &#x60;mailto:example@domain.com&#x60;, or in the User-Agent request header, like &#x60;User-Agent: my-app (mailto:example@domain.com)&#x60;. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool). | [optional] 
@@ -164,7 +164,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_institutions**
-> InstitutionsResponseSchema get_institutions(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
+> InstitutionsResponseSchema get_institutions(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
 
 /institutions
 
@@ -200,6 +200,7 @@ with openalex_api.ApiClient(configuration) as api_client:
     per_page = 3 # int |  (optional)
     sample = 56 # int |  (optional)
     search = 'search_example' # str |  (optional)
+    seed = None # object |  (optional)
     select = 'select_example' # str |  (optional)
     sort = 'sort_example' # str |  (optional)
     user_agent = None # object | [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) (optional)
@@ -207,7 +208,7 @@ with openalex_api.ApiClient(configuration) as api_client:
 
     try:
         # /institutions
-        api_response = api_instance.get_institutions(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
+        api_response = api_instance.get_institutions(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
         print("The response of InstitutionsApi->get_institutions:\n")
         pprint(api_response)
     except Exception as e:
@@ -229,6 +230,7 @@ Name | Type | Description  | Notes
  **per_page** | **int**|  | [optional] 
  **sample** | **int**|  | [optional] 
  **search** | **str**|  | [optional] 
+ **seed** | [**object**](.md)|  | [optional] 
  **select** | **str**|  | [optional] 
  **sort** | **str**|  | [optional] 
  **user_agent** | [**object**](.md)| [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) | [optional] 

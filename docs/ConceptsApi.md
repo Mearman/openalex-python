@@ -164,7 +164,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_concepts**
-> ConceptsResponseSchema get_concepts(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
+> ConceptsResponseSchema get_concepts(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
 
 /concepts
 
@@ -200,6 +200,7 @@ with openalex_api.ApiClient(configuration) as api_client:
     per_page = 3 # int |  (optional)
     sample = 56 # int |  (optional)
     search = 'search_example' # str |  (optional)
+    seed = None # object |  (optional)
     select = 'select_example' # str |  (optional)
     sort = 'sort_example' # str |  (optional)
     user_agent = None # object | [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) (optional)
@@ -207,7 +208,7 @@ with openalex_api.ApiClient(configuration) as api_client:
 
     try:
         # /concepts
-        api_response = api_instance.get_concepts(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
+        api_response = api_instance.get_concepts(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
         print("The response of ConceptsApi->get_concepts:\n")
         pprint(api_response)
     except Exception as e:
@@ -229,6 +230,7 @@ Name | Type | Description  | Notes
  **per_page** | **int**|  | [optional] 
  **sample** | **int**|  | [optional] 
  **search** | **str**|  | [optional] 
+ **seed** | [**object**](.md)|  | [optional] 
  **select** | **str**|  | [optional] 
  **sort** | **str**|  | [optional] 
  **user_agent** | [**object**](.md)| [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool) | [optional] 

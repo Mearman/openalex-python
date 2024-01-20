@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**currency** | **str** |  | 
-**provenance** | **str** |  | 
-**value** | **int** |  | 
-**value_usd** | **int** |  | 
+**currency** | **object** |  | 
+**provenance** | **object** |  | 
+**value** | **object** |  | 
+**value_usd** | **object** |  | 
 
 ## Example
 

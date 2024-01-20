@@ -43,7 +43,6 @@ from openalex_api.exceptions import ApiAttributeError
 from openalex_api.exceptions import ApiException
 
 # import models into sdk package
-from openalex_api.models.affiliations_inner import AffiliationsInner
 from openalex_api.models.apc import Apc
 from openalex_api.models.associated_institution import AssociatedInstitution
 from openalex_api.models.author import Author

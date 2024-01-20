@@ -20,7 +20,6 @@ import json
 
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel
-from openalex_api.models.affiliations_inner import AffiliationsInner
 from openalex_api.models.dehydrated_institution import DehydratedInstitution
 from openalex_api.models.ids import Ids
 from openalex_api.models.summary_stats import SummaryStats
@@ -33,7 +32,7 @@ class Author(BaseModel):
     """
     Author
     """ # noqa: E501
-    affiliations: Optional[List[AffiliationsInner]] = None
+    affiliations: Optional[Any] = None
     cited_by_count: Optional[Any] = None
     counts_by_year: Optional[Any] = None
     created_date: Optional[Any] = None
@@ -88,13 +87,6 @@ class Author(BaseModel):
             },
             exclude_none=True,
         )
-        # override the default output from pydantic by calling `to_dict()` of each item in affiliations (list)
-        _items = []
-        if self.affiliations:
-            for _item in self.affiliations:
-                if _item:
-                    _items.append(_item.to_dict())
-            _dict['affiliations'] = _items
         # override the default output from pydantic by calling `to_dict()` of ids
         if self.ids:
             _dict['ids'] = self.ids.to_dict()
@@ -104,6 +96,11 @@ class Author(BaseModel):
         # override the default output from pydantic by calling `to_dict()` of summary_stats
         if self.summary_stats:
             _dict['summary_stats'] = self.summary_stats.to_dict()
+        # set to None if affiliations (nullable) is None
+        # and model_fields_set contains the field
+        if self.affiliations is None and "affiliations" in self.model_fields_set:
+            _dict['affiliations'] = None
+
         # set to None if cited_by_count (nullable) is None
         # and model_fields_set contains the field
         if self.cited_by_count is None and "cited_by_count" in self.model_fields_set:
@@ -176,7 +173,7 @@ class Author(BaseModel):
             return cls.model_validate(obj)
 
         _obj = cls.model_validate({
-            "affiliations": [AffiliationsInner.from_dict(_item) for _item in obj.get("affiliations")] if obj.get("affiliations") is not None else None,
+            "affiliations": obj.get("affiliations"),
             "cited_by_count": obj.get("cited_by_count"),
             "counts_by_year": obj.get("counts_by_year"),
             "created_date": obj.get("created_date"),

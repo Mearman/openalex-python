@@ -14,7 +14,6 @@
 
 
 # import models into model package
-from openalex_api.models.affiliations_inner import AffiliationsInner
 from openalex_api.models.apc import Apc
 from openalex_api.models.associated_institution import AssociatedInstitution
 from openalex_api.models.author import Author

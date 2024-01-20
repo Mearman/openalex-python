@@ -52,7 +52,7 @@ class PeopleApi:
     @validate_call
     def get_person(
         self,
-        id: StrictStr,
+        id: Any,
         select: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
         mailto: Annotated[Optional[Any], Field(description="The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).")] = None,
@@ -74,7 +74,7 @@ class PeopleApi:
         
 
         :param id: (required)
-        :type id: str
+        :type id: object
         :param select:
         :type select: str
         :param user_agent: [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)
@@ -132,7 +132,7 @@ class PeopleApi:
     @validate_call
     def get_person_with_http_info(
         self,
-        id: StrictStr,
+        id: Any,
         select: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
         mailto: Annotated[Optional[Any], Field(description="The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).")] = None,
@@ -154,7 +154,7 @@ class PeopleApi:
         
 
         :param id: (required)
-        :type id: str
+        :type id: object
         :param select:
         :type select: str
         :param user_agent: [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)
@@ -212,7 +212,7 @@ class PeopleApi:
     @validate_call
     def get_person_without_preload_content(
         self,
-        id: StrictStr,
+        id: Any,
         select: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
         mailto: Annotated[Optional[Any], Field(description="The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).")] = None,
@@ -234,7 +234,7 @@ class PeopleApi:
         
 
         :param id: (required)
-        :type id: str
+        :type id: object
         :param select:
         :type select: str
         :param user_agent: [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)

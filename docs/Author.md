@@ -5,7 +5,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**affiliations** | [**List[AffiliationsInner]**](AffiliationsInner.md) |  | [optional] 
+**affiliations** | **object** |  | [optional] 
 **cited_by_count** | **object** |  | [optional] 
 **counts_by_year** | **object** |  | [optional] 
 **created_date** | **object** |  | [optional] 

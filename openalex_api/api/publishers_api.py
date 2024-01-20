@@ -348,7 +348,7 @@ class PublishersApi:
     @validate_call
     def get_publisher(
         self,
-        id: StrictStr,
+        id: Any,
         select: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
         mailto: Annotated[Optional[Any], Field(description="The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).")] = None,
@@ -370,7 +370,7 @@ class PublishersApi:
         
 
         :param id: (required)
-        :type id: str
+        :type id: object
         :param select:
         :type select: str
         :param user_agent: [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)
@@ -428,7 +428,7 @@ class PublishersApi:
     @validate_call
     def get_publisher_with_http_info(
         self,
-        id: StrictStr,
+        id: Any,
         select: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
         mailto: Annotated[Optional[Any], Field(description="The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).")] = None,
@@ -450,7 +450,7 @@ class PublishersApi:
         
 
         :param id: (required)
-        :type id: str
+        :type id: object
         :param select:
         :type select: str
         :param user_agent: [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)
@@ -508,7 +508,7 @@ class PublishersApi:
     @validate_call
     def get_publisher_without_preload_content(
         self,
-        id: StrictStr,
+        id: Any,
         select: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
         mailto: Annotated[Optional[Any], Field(description="The API is the primary way to get OpenAlex data. It's free and requires no authentication. The daily limit for API calls is 100,000 requests per user per day. For best performance, add your email to all API requests The email can be either in the query string, like `mailto:example@domain.com`, or in the User-Agent request header, like `User-Agent: my-app (mailto:example@domain.com)`. Read more about the polite pool at [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool).")] = None,
@@ -530,7 +530,7 @@ class PublishersApi:
         
 
         :param id: (required)
-        :type id: str
+        :type id: object
         :param select:
         :type select: str
         :param user_agent: [docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)
@@ -665,6 +665,7 @@ class PublishersApi:
         per_page: Optional[StrictInt] = None,
         sample: Optional[StrictInt] = None,
         search: Optional[StrictStr] = None,
+        seed: Optional[Any] = None,
         select: Optional[StrictStr] = None,
         sort: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
@@ -702,6 +703,8 @@ class PublishersApi:
         :type sample: int
         :param search:
         :type search: str
+        :param seed:
+        :type seed: object
         :param select:
         :type select: str
         :param sort:
@@ -741,6 +744,7 @@ class PublishersApi:
             per_page=per_page,
             sample=sample,
             search=search,
+            seed=seed,
             select=select,
             sort=sort,
             user_agent=user_agent,
@@ -777,6 +781,7 @@ class PublishersApi:
         per_page: Optional[StrictInt] = None,
         sample: Optional[StrictInt] = None,
         search: Optional[StrictStr] = None,
+        seed: Optional[Any] = None,
         select: Optional[StrictStr] = None,
         sort: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
@@ -814,6 +819,8 @@ class PublishersApi:
         :type sample: int
         :param search:
         :type search: str
+        :param seed:
+        :type seed: object
         :param select:
         :type select: str
         :param sort:
@@ -853,6 +860,7 @@ class PublishersApi:
             per_page=per_page,
             sample=sample,
             search=search,
+            seed=seed,
             select=select,
             sort=sort,
             user_agent=user_agent,
@@ -889,6 +897,7 @@ class PublishersApi:
         per_page: Optional[StrictInt] = None,
         sample: Optional[StrictInt] = None,
         search: Optional[StrictStr] = None,
+        seed: Optional[Any] = None,
         select: Optional[StrictStr] = None,
         sort: Optional[StrictStr] = None,
         user_agent: Annotated[Optional[Any], Field(description="[docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)")] = None,
@@ -926,6 +935,8 @@ class PublishersApi:
         :type sample: int
         :param search:
         :type search: str
+        :param seed:
+        :type seed: object
         :param select:
         :type select: str
         :param sort:
@@ -965,6 +976,7 @@ class PublishersApi:
             per_page=per_page,
             sample=sample,
             search=search,
+            seed=seed,
             select=select,
             sort=sort,
             user_agent=user_agent,
@@ -996,6 +1008,7 @@ class PublishersApi:
         per_page,
         sample,
         search,
+        seed,
         select,
         sort,
         user_agent,
@@ -1051,6 +1064,10 @@ class PublishersApi:
         if search is not None:
             
             _query_params.append(('search', search))
+            
+        if seed is not None:
+            
+            _query_params.append(('seed', seed))
             
         if select is not None:
             

@@ -18,8 +18,8 @@ import re  # noqa: F401
 import json
 
 
-from typing import Any, ClassVar, Dict, List
-from pydantic import BaseModel, StrictInt, StrictStr
+from typing import Any, ClassVar, Dict, List, Optional
+from pydantic import BaseModel
 try:
     from typing import Self
 except ImportError:
@@ -29,10 +29,10 @@ class Apc(BaseModel):
     """
     Apc
     """ # noqa: E501
-    currency: StrictStr
-    provenance: StrictStr
-    value: StrictInt
-    value_usd: StrictInt
+    currency: Optional[Any]
+    provenance: Optional[Any]
+    value: Optional[Any]
+    value_usd: Optional[Any]
     __properties: ClassVar[List[str]] = ["currency", "provenance", "value", "value_usd"]
 
     model_config = {
@@ -72,6 +72,26 @@ class Apc(BaseModel):
             },
             exclude_none=True,
         )
+        # set to None if currency (nullable) is None
+        # and model_fields_set contains the field
+        if self.currency is None and "currency" in self.model_fields_set:
+            _dict['currency'] = None
+
+        # set to None if provenance (nullable) is None
+        # and model_fields_set contains the field
+        if self.provenance is None and "provenance" in self.model_fields_set:
+            _dict['provenance'] = None
+
+        # set to None if value (nullable) is None
+        # and model_fields_set contains the field
+        if self.value is None and "value" in self.model_fields_set:
+            _dict['value'] = None
+
+        # set to None if value_usd (nullable) is None
+        # and model_fields_set contains the field
+        if self.value_usd is None and "value_usd" in self.model_fields_set:
+            _dict['value_usd'] = None
+
         return _dict
 
     @classmethod
