@@ -3,7 +3,6 @@
 .gitlab-ci.yml
 .travis.yml
 README.md
-docs/AffiliationsInner.md
 docs/Apc.md
 docs/AssociatedInstitution.md
 docs/Author.md
@@ -82,7 +81,6 @@ openalex_api/api_response.py
 openalex_api/configuration.py
 openalex_api/exceptions.py
 openalex_api/models/__init__.py
-openalex_api/models/affiliations_inner.py
 openalex_api/models/apc.py
 openalex_api/models/associated_institution.py
 openalex_api/models/author.py
