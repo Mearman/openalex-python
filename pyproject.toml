@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "openalex_api"
-version = "0.0.8"
+version = "0.0.9"
 description = "OpenAlex"
 authors = ["OpenAPI Generator Community <team@openapitools.org>"]
 license = "CC0"
