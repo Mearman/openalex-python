@@ -13,6 +13,8 @@ This OpenAPI specification is reverse-engineered and derived from spec generated
 
 The specification document itself is OpenAPI version 3.1 and is generated from TypeScript source code.
 
+[![Open in](https://img.shields.io/badge/Open%20in-Swagger%20UI-85EA2D?style=for-the-badge&logo=Swagger&link=https://mearman.github.io/openalex-swagger-ui-react/)](https://mearman.github.io/openalex-swagger-ui-react/)
+
 **[Releases](https://github.com/Mearman/openalex-api-spec/releases)**
 
 ## Clients
