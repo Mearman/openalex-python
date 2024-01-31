@@ -133,6 +133,7 @@ Class | Method | HTTP request | Description
 *ConceptsApi* | [**get_autocomplete_concepts**](docs/ConceptsApi.md#get_autocomplete_concepts) | **GET** /autocomplete/concepts | /autocomplete/concepts
 *ConceptsApi* | [**get_concept**](docs/ConceptsApi.md#get_concept) | **GET** /concepts/{id} | /concepts/{id}
 *ConceptsApi* | [**get_concepts**](docs/ConceptsApi.md#get_concepts) | **GET** /concepts | /concepts
+*ConceptsApi* | [**get_random_concept**](docs/ConceptsApi.md#get_random_concept) | **GET** /concepts/random | /concepts/random
 *FundersApi* | [**get_autocomplete_funders**](docs/FundersApi.md#get_autocomplete_funders) | **GET** /autocomplete/funders | /autocomplete/funders
 *FundersApi* | [**get_funder**](docs/FundersApi.md#get_funder) | **GET** /funders/{id} | /funders/{id}
 *FundersApi* | [**get_funders**](docs/FundersApi.md#get_funders) | **GET** /funders | /funders
