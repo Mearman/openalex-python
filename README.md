@@ -150,7 +150,26 @@ Class | Method | HTTP request | Description
 *PublishersApi* | [**get_publisher**](docs/PublishersApi.md#get_publisher) | **GET** /publishers/{id} | /publishers/{id}
 *PublishersApi* | [**get_publishers**](docs/PublishersApi.md#get_publishers) | **GET** /publishers | /publishers
 *PublishersApi* | [**get_random_publisher**](docs/PublishersApi.md#get_random_publisher) | **GET** /publishers/random | /publishers/random
+*RandomApi* | [**get_random_author**](docs/RandomApi.md#get_random_author) | **GET** /authors/random | Get Random Author
+*RandomApi* | [**get_random_concept**](docs/RandomApi.md#get_random_concept) | **GET** /concepts/random | /concepts/random
+*RandomApi* | [**get_random_funder**](docs/RandomApi.md#get_random_funder) | **GET** /funders/random | /funders/random
+*RandomApi* | [**get_random_institution**](docs/RandomApi.md#get_random_institution) | **GET** /institutions/random | /institutions/random
+*RandomApi* | [**get_random_publisher**](docs/RandomApi.md#get_random_publisher) | **GET** /publishers/random | /publishers/random
+*RandomApi* | [**get_random_source**](docs/RandomApi.md#get_random_source) | **GET** /sources/random | /sources/random
 *RandomApi* | [**get_random_work**](docs/RandomApi.md#get_random_work) | **GET** /works/random | /works/random
+*SingleApi* | [**get_author**](docs/SingleApi.md#get_author) | **GET** /authors/{id} | Get Author
+*SingleApi* | [**get_concept**](docs/SingleApi.md#get_concept) | **GET** /concepts/{id} | /concepts/{id}
+*SingleApi* | [**get_funder**](docs/SingleApi.md#get_funder) | **GET** /funders/{id} | /funders/{id}
+*SingleApi* | [**get_institution**](docs/SingleApi.md#get_institution) | **GET** /institutions/{id} | /institutions/{id}
+*SingleApi* | [**get_publisher**](docs/SingleApi.md#get_publisher) | **GET** /publishers/{id} | /publishers/{id}
+*SingleApi* | [**get_random_author**](docs/SingleApi.md#get_random_author) | **GET** /authors/random | Get Random Author
+*SingleApi* | [**get_random_concept**](docs/SingleApi.md#get_random_concept) | **GET** /concepts/random | /concepts/random
+*SingleApi* | [**get_random_funder**](docs/SingleApi.md#get_random_funder) | **GET** /funders/random | /funders/random
+*SingleApi* | [**get_random_institution**](docs/SingleApi.md#get_random_institution) | **GET** /institutions/random | /institutions/random
+*SingleApi* | [**get_random_publisher**](docs/SingleApi.md#get_random_publisher) | **GET** /publishers/random | /publishers/random
+*SingleApi* | [**get_random_source**](docs/SingleApi.md#get_random_source) | **GET** /sources/random | /sources/random
+*SingleApi* | [**get_random_work**](docs/SingleApi.md#get_random_work) | **GET** /works/random | /works/random
+*SingleApi* | [**get_source**](docs/SingleApi.md#get_source) | **GET** /sources/{id} | /sources/{id}
 *SingleApi* | [**get_work**](docs/SingleApi.md#get_work) | **GET** /works/{id} | /works/{id}
 *SingleApi* | [**get_work_ngrams**](docs/SingleApi.md#get_work_ngrams) | **GET** /works/{id}/ngrams | /works/{id}/ngrams
 *SourcesApi* | [**get_autocomplete_sources**](docs/SourcesApi.md#get_autocomplete_sources) | **GET** /autocomplete/sources | /autocomplete/sources

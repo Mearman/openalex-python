@@ -135,5 +135,4 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
-test/test_random_api.py
 tox.ini

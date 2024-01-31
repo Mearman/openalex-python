@@ -1139,7 +1139,7 @@ class AuthorsApi:
     ) -> Author:
         """Get Random Author
 
-        Get a single author by id
+        Get a random author
 
         :param select:
         :type select: str
@@ -1215,7 +1215,7 @@ class AuthorsApi:
     ) -> ApiResponse[Author]:
         """Get Random Author
 
-        Get a single author by id
+        Get a random author
 
         :param select:
         :type select: str
@@ -1291,7 +1291,7 @@ class AuthorsApi:
     ) -> RESTResponseType:
         """Get Random Author
 
-        Get a single author by id
+        Get a random author
 
         :param select:
         :type select: str
