@@ -45,6 +45,7 @@ docs/PublisherSchema.md
 docs/PublisherSchemaParentPublisher.md
 docs/PublishersApi.md
 docs/PublishersResponseSchema.md
+docs/RandomApi.md
 docs/Role.md
 docs/RootResponseSchema.md
 docs/SingleApi.md
@@ -73,6 +74,7 @@ openalex_api/api/list_api.py
 openalex_api/api/ngrams_api.py
 openalex_api/api/people_api.py
 openalex_api/api/publishers_api.py
+openalex_api/api/random_api.py
 openalex_api/api/single_api.py
 openalex_api/api/sources_api.py
 openalex_api/api/works_api.py
@@ -133,4 +135,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_random_api.py
 tox.ini
