@@ -1,0 +1,11 @@
+authors:
+  - affiliation: "@BangorUniversity"
+    family-names: Joseph Mearman
+    orcid: "https://orcid.org/0000-0002-9315-9760"
+cff-version: 1.2.0
+doi: 10.5281/zenodo.10976883
+license:
+  - cc-by-4.0
+repository-code: https://github.com/Mearman/openalex-python
+title: "Mearman/openalex-python"
+type: software
