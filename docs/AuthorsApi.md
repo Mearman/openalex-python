@@ -89,7 +89,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_authors**
-> AuthorsResponseSchema get_authors(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
+> Authors get_authors(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
 
 List Authors
 
@@ -102,7 +102,7 @@ Get lists of authors
 import time
 import os
 import openalex_api
-from openalex_api.models.authors_response_schema import AuthorsResponseSchema
+from openalex_api.models.authors import Authors
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -163,7 +163,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**AuthorsResponseSchema**](AuthorsResponseSchema.md)
+[**Authors**](Authors.md)
 
 ### Authorization
 

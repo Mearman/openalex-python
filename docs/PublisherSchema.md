@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **image_thumbnail_url** | **object** |  | [optional] 
 **image_url** | **object** |  | [optional] 
 **lineage** | **object** |  | [optional] 
-**parent_publisher** | [**PublisherSchemaParentPublisher**](PublisherSchemaParentPublisher.md) |  | [optional] 
+**parent_publisher** | [**PublisherParentPublisher**](PublisherParentPublisher.md) |  | [optional] 
 **roles** | **object** |  | [optional] 
 **sources_api_url** | **object** |  | [optional] 
 **summary_stats** | [**SummaryStats**](SummaryStats.md) |  | [optional] 

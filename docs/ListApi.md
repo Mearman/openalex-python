@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_works**
-> WorksResponseSchema get_works(api_key=api_key, cursor=cursor, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, filter=filter, user_agent=user_agent, mailto=mailto)
+> WorksResponse get_works(api_key=api_key, cursor=cursor, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, filter=filter, user_agent=user_agent, mailto=mailto)
 
 /works
 
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 import time
 import os
 import openalex_api
-from openalex_api.models.works_response_schema import WorksResponseSchema
+from openalex_api.models.works_response import WorksResponse
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WorksResponseSchema**](WorksResponseSchema.md)
+[**WorksResponse**](WorksResponse.md)
 
 ### Authorization
 

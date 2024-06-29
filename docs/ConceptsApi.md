@@ -5,7 +5,7 @@ All URIs are relative to *https://api.openalex.org*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**get_autocomplete_concepts**](ConceptsApi.md#get_autocomplete_concepts) | **GET** /autocomplete/concepts | /autocomplete/concepts
-[**get_concept**](ConceptsApi.md#get_concept) | **GET** /concepts/{id} | /concepts/{id}
+[**get_concept_by_id**](ConceptsApi.md#get_concept_by_id) | **GET** /concepts/{id} | /concepts/{id}
 [**get_concepts**](ConceptsApi.md#get_concepts) | **GET** /concepts | /concepts
 [**get_random_concept**](ConceptsApi.md#get_random_concept) | **GET** /concepts/random | /concepts/random
 
@@ -86,8 +86,8 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_concept**
-> Concept get_concept(id, select=select, user_agent=user_agent, mailto=mailto)
+# **get_concept_by_id**
+> Concept get_concept_by_id(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /concepts/{id}
 
@@ -122,11 +122,11 @@ with openalex_api.ApiClient(configuration) as api_client:
 
     try:
         # /concepts/{id}
-        api_response = api_instance.get_concept(id, select=select, user_agent=user_agent, mailto=mailto)
-        print("The response of ConceptsApi->get_concept:\n")
+        api_response = api_instance.get_concept_by_id(id, select=select, user_agent=user_agent, mailto=mailto)
+        print("The response of ConceptsApi->get_concept_by_id:\n")
         pprint(api_response)
     except Exception as e:
-        print("Exception when calling ConceptsApi->get_concept: %s\n" % e)
+        print("Exception when calling ConceptsApi->get_concept_by_id: %s\n" % e)
 ```
 
 
@@ -165,7 +165,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_concepts**
-> ConceptsResponseSchema get_concepts(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
+> Concepts get_concepts(api_key=api_key, cursor=cursor, filter=filter, group_by=group_by, page=page, per_page=per_page, sample=sample, search=search, seed=seed, select=select, sort=sort, user_agent=user_agent, mailto=mailto)
 
 /concepts
 
@@ -178,7 +178,7 @@ No authorization required
 import time
 import os
 import openalex_api
-from openalex_api.models.concepts_response_schema import ConceptsResponseSchema
+from openalex_api.models.concepts import Concepts
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -239,7 +239,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ConceptsResponseSchema**](ConceptsResponseSchema.md)
+[**Concepts**](Concepts.md)
 
 ### Authorization
 

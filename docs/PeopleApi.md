@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_person**
-> PersonResponseSchema get_person(id, select=select, user_agent=user_agent, mailto=mailto)
+> Person get_person(id, select=select, user_agent=user_agent, mailto=mailto)
 
 /people/{id}
 
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 import time
 import os
 import openalex_api
-from openalex_api.models.person_response_schema import PersonResponseSchema
+from openalex_api.models.person import Person
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PersonResponseSchema**](PersonResponseSchema.md)
+[**Person**](Person.md)
 
 ### Authorization
 

@@ -166,7 +166,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_funder**
-> FunderSchema get_random_funder(select=select, user_agent=user_agent, mailto=mailto)
+> Funder get_random_funder(select=select, user_agent=user_agent, mailto=mailto)
 
 /funders/random
 
@@ -179,7 +179,7 @@ Get a random funder
 import time
 import os
 import openalex_api
-from openalex_api.models.funder_schema import FunderSchema
+from openalex_api.models.funder import Funder
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**FunderSchema**](FunderSchema.md)
+[**Funder**](Funder.md)
 
 ### Authorization
 
@@ -242,7 +242,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_institution**
-> InstitutionSchema get_random_institution(select=select, user_agent=user_agent, mailto=mailto)
+> Institution get_random_institution(select=select, user_agent=user_agent, mailto=mailto)
 
 /institutions/random
 
@@ -255,7 +255,7 @@ Get a random institution
 import time
 import os
 import openalex_api
-from openalex_api.models.institution_schema import InstitutionSchema
+from openalex_api.models.institution import Institution
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -296,7 +296,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InstitutionSchema**](InstitutionSchema.md)
+[**Institution**](Institution.md)
 
 ### Authorization
 
@@ -318,7 +318,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_publisher**
-> PublisherSchema get_random_publisher(select=select, user_agent=user_agent, mailto=mailto)
+> Publisher get_random_publisher(select=select, user_agent=user_agent, mailto=mailto)
 
 /publishers/random
 
@@ -331,7 +331,7 @@ Get a random publisher
 import time
 import os
 import openalex_api
-from openalex_api.models.publisher_schema import PublisherSchema
+from openalex_api.models.publisher import Publisher
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -372,7 +372,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PublisherSchema**](PublisherSchema.md)
+[**Publisher**](Publisher.md)
 
 ### Authorization
 
@@ -394,7 +394,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_source**
-> SourceSchema get_random_source(select=select, user_agent=user_agent, mailto=mailto)
+> Source get_random_source(select=select, user_agent=user_agent, mailto=mailto)
 
 /sources/random
 
@@ -407,7 +407,7 @@ Get a random source
 import time
 import os
 import openalex_api
-from openalex_api.models.source_schema import SourceSchema
+from openalex_api.models.source import Source
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -448,7 +448,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**SourceSchema**](SourceSchema.md)
+[**Source**](Source.md)
 
 ### Authorization
 
@@ -470,7 +470,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_random_work**
-> WorkSchema get_random_work(select=select, user_agent=user_agent, mailto=mailto)
+> Work get_random_work(select=select, user_agent=user_agent, mailto=mailto)
 
 /works/random
 
@@ -483,7 +483,7 @@ Get a random work
 import time
 import os
 import openalex_api
-from openalex_api.models.work_schema import WorkSchema
+from openalex_api.models.work import Work
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -524,7 +524,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WorkSchema**](WorkSchema.md)
+[**Work**](Work.md)
 
 ### Authorization
 

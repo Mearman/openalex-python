@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **get_work_ngrams**
-> WorkNgramsSchema get_work_ngrams(id, user_agent=user_agent, mailto=mailto)
+> Ngrams get_work_ngrams(id, user_agent=user_agent, mailto=mailto)
 
 /works/{id}/ngrams
 
@@ -21,7 +21,7 @@ Method | HTTP request | Description
 import time
 import os
 import openalex_api
-from openalex_api.models.work_ngrams_schema import WorkNgramsSchema
+from openalex_api.models.ngrams import Ngrams
 from openalex_api.rest import ApiException
 from pprint import pprint
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**WorkNgramsSchema**](WorkNgramsSchema.md)
+[**Ngrams**](Ngrams.md)
 
 ### Authorization
 
