@@ -8,45 +8,45 @@ Name | Type | Description | Notes
 **abstract_inverted_index** | **object** |  | [optional] 
 **apc_list** | [**Apc**](Apc.md) |  | [optional] 
 **apc_paid** | [**Apc**](Apc.md) |  | [optional] 
-**authorships** | **object** |  | [optional] 
+**authorships** | [**List[AuthorshipsInner]**](AuthorshipsInner.md) |  | [optional] 
 **best_oa_location** | [**Location**](Location.md) |  | [optional] 
 **biblio** | [**WorkBiblio**](WorkBiblio.md) |  | [optional] 
-**cited_by_api_url** | **object** |  | [optional] 
-**cited_by_count** | **object** |  | [optional] 
+**cited_by_api_url** | **str** |  | [optional] 
+**cited_by_count** | **int** |  | [optional] 
 **cited_by_percentile_year** | [**WorkCitedByPercentileYear**](WorkCitedByPercentileYear.md) |  | [optional] 
-**concepts** | **object** |  | [optional] 
-**corresponding_author_ids** | **object** |  | [optional] 
-**corresponding_institution_ids** | **object** |  | [optional] 
-**countries_distinct_count** | **object** |  | [optional] 
-**counts_by_year** | **object** |  | [optional] 
-**created_date** | **object** |  | [optional] 
-**display_name** | **object** |  | 
-**doi** | **object** |  | [optional] 
-**grants** | **object** |  | [optional] 
-**has_fulltext** | **object** |  | [optional] 
-**id** | **object** |  | 
+**concepts** | [**List[DehydratedConcept]**](DehydratedConcept.md) |  | [optional] 
+**corresponding_author_ids** | **List[str]** |  | [optional] 
+**corresponding_institution_ids** | **List[str]** |  | [optional] 
+**countries_distinct_count** | **int** |  | [optional] 
+**counts_by_year** | [**List[CountsByYearInner]**](CountsByYearInner.md) |  | [optional] 
+**created_date** | **str** |  | [optional] 
+**display_name** | **str** |  | 
+**doi** | **str** |  | [optional] 
+**grants** | [**List[WorkGrantsInner]**](WorkGrantsInner.md) |  | [optional] 
+**has_fulltext** | **bool** |  | [optional] 
+**id** | **str** |  | 
 **ids** | [**Ids**](Ids.md) |  | [optional] 
-**institutions_distinct_count** | **object** |  | [optional] 
-**is_paratext** | **object** |  | [optional] 
-**is_retracted** | **object** |  | [optional] 
-**keywords** | **object** |  | [optional] 
-**language** | **object** |  | [optional] 
-**locations** | **object** |  | [optional] 
-**locations_count** | **object** |  | [optional] 
-**mesh** | **object** |  | [optional] 
-**ngrams_url** | **object** |  | [optional] 
+**institutions_distinct_count** | **int** |  | [optional] 
+**is_paratext** | **bool** |  | [optional] 
+**is_retracted** | **bool** |  | [optional] 
+**keywords** | [**List[WorkKeywordsInner]**](WorkKeywordsInner.md) |  | [optional] 
+**language** | **str** |  | [optional] 
+**locations** | [**List[Location]**](Location.md) |  | [optional] 
+**locations_count** | **int** |  | [optional] 
+**mesh** | [**List[WorkMeshInner]**](WorkMeshInner.md) |  | [optional] 
+**ngrams_url** | **str** |  | [optional] 
 **open_access** | [**WorkOpenAccess**](WorkOpenAccess.md) |  | [optional] 
 **primary_location** | [**Location**](Location.md) |  | [optional] 
-**publication_date** | **object** |  | [optional] 
-**publication_year** | **object** |  | [optional] 
-**referenced_works** | **object** |  | [optional] 
-**referenced_works_count** | **object** |  | [optional] 
-**related_works** | **object** |  | [optional] 
-**sustainable_development_goals** | **object** |  | [optional] 
-**title** | **object** |  | [optional] 
-**type** | **object** |  | [optional] 
-**type_crossref** | **object** |  | [optional] 
-**updated_date** | **object** |  | [optional] 
+**publication_date** | **str** |  | [optional] 
+**publication_year** | **int** |  | [optional] 
+**referenced_works** | **List[str]** |  | [optional] 
+**referenced_works_count** | **int** |  | [optional] 
+**related_works** | **List[str]** |  | [optional] 
+**sustainable_development_goals** | [**List[WorkSustainableDevelopmentGoalsInner]**](WorkSustainableDevelopmentGoalsInner.md) |  | [optional] 
+**title** | **str** |  | [optional] 
+**type** | **str** |  | [optional] 
+**type_crossref** | **str** |  | [optional] 
+**updated_date** | **str** |  | [optional] 
 
 ## Example
 
@@ -58,12 +58,12 @@ json = "{}"
 # create an instance of Work from a JSON string
 work_instance = Work.from_json(json)
 # print the JSON string representation of the object
-print Work.to_json()
+print(Work.to_json())
 
 # convert the object into a dict
 work_dict = work_instance.to_dict()
 # create an instance of Work from a dict
-work_form_dict = work.from_dict(work_dict)
+work_from_dict = Work.from_dict(work_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

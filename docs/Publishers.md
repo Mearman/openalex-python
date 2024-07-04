@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**group_by** | **object** |  | 
+**group_by** | [**List[GroupByResultInner]**](GroupByResultInner.md) |  | 
 **meta** | [**Meta**](Meta.md) |  | 
-**results** | **object** |  | 
+**results** | [**List[PublisherSchema]**](PublisherSchema.md) |  | 
 
 ## Example
 
@@ -19,12 +19,12 @@ json = "{}"
 # create an instance of Publishers from a JSON string
 publishers_instance = Publishers.from_json(json)
 # print the JSON string representation of the object
-print Publishers.to_json()
+print(Publishers.to_json())
 
 # convert the object into a dict
 publishers_dict = publishers_instance.to_dict()
 # create an instance of Publishers from a dict
-publishers_form_dict = publishers.from_dict(publishers_dict)
+publishers_from_dict = Publishers.from_dict(publishers_dict)
 ```
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
